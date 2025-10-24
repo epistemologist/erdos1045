@@ -8,12 +8,10 @@ The main problem can be found [here](https://www.erdosproblems.com/forum/thread/
 Note we can replace $\Delta$ with $$\Delta^2(z_1 \cdots z_n) = \prod_{i \ne j} |z_i - z_j|^2 = \prod_{1 \le i < j \le n} \left( \\\; ( \text{Re}(z_i)-\text{Re}(z_j))^2 \\\; + \\\;(\text{Im}(z_i)-\text{Im}(z_j))^2) \\\;  \right) $$
 
 we attempt to maximize 
-$$
-\begin{align*}
+$$\begin{align*}
 \Delta^2 : \mathbb{R}^{2n} &\to \mathbb{R} \\ 
 \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_{2n-1} \\ x_{2n} \end{bmatrix} &\mapsto \Delta^2( x_1 + x_2i, \cdots, x_{2n-1}+x_{2n}i) 
-\end{align*}
-$$
+\end{align*}$$
 
 ## Known Cases
  - $n=4$: $$\begin{align*}z_1 &= (0, 0) \\ z_2 &= (\sqrt{3}, 1) \\ z_3 &= (\sqrt3, -1) \\ z_4 &= (2, 0) \end{align*}$$ source: [Quanyu Tang](https://github.com/QuanyuTang/counterexamples-problem-1045/blob/main/Counterexamples_for_Erdos_Problem_1045.pdf)
