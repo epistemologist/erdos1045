@@ -11,10 +11,19 @@ we attempt to maximize
 $$\begin{align*}
 \Delta^2 : \mathbb{R}^{2n} &\to \mathbb{R} \\ 
 \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_{2n-1} \\ x_{2n} \end{bmatrix} &\mapsto \Delta^2( x_1 + x_2i, \cdots, x_{2n-1}+x_{2n}i) 
-\end{align*}$$
+\end{align*}
+$$
 
 ## Known Cases
- - $n=4$: $$\begin{align*}z_1 &= (0, 0) \\ z_2 &= (\sqrt{3}, 1) \\ z_3 &= (\sqrt3, -1) \\ z_4 &= (2, 0) \end{align*}$$ source: [Quanyu Tang](https://github.com/QuanyuTang/counterexamples-problem-1045/blob/main/Counterexamples_for_Erdos_Problem_1045.pdf)
+ - $n=4$: 
+ $$\begin{align*}
+ z_1 &= (0, 0) \\ 
+ z_2 &= (\sqrt{3}, 1) \\ 
+ z_3 &= (\sqrt3, -1) \\ 
+ z_4 &= (2, 0) 
+ \end{align*}
+ $$ 
+ source: [Quanyu Tang](https://github.com/QuanyuTang/counterexamples-problem-1045/blob/main/Counterexamples_for_Erdos_Problem_1045.pdf)
 - $n=5$: maximized by regular pentagon
     
     Proof: Note for a pentagon $z_1 \cdots z_5$, $$\begin{align*}\left( \Delta(z_1 \cdots z_5)\right) ^{1/5} &= \left( \prod \text{sides} \right)^{1/5} \cdot \left( \prod \text{diagonals}\right)^{1/5} \\
@@ -28,10 +37,3 @@ $$\begin{align*}
 
 ## References / Further Reading
 TODO
-
-$$
-\begin{align*} 
-2x - 5y &=  8 \\ 
-3x + 9y &=  -12
-\end{align*}
-$$
