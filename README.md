@@ -33,6 +33,11 @@ we attempt to maximize
     However, $\sum \text{sides}$ and $\sum \text{diagonals} $ of a pentagon are both maximized by the regular pentagon (see [here](https://link.springer.com/article/10.1007/s10898-010-9572-2) for example); since all sides and diagonals are equal, by AM-GM, we have $\ge$ is $=$ in the above inequality
 - $n=6$: $` \begin{align*} z_1 &= (-1,0) \\ z_2 &= (1,0) \\ z_3 &= (0, \sqrt3) \\ z_4 &= (0, -(2-\sqrt3)) \\ z_5 &= (\sqrt3-1, 1) \\ z_6 &= (-(\sqrt3-1), 1) \end{align*}`$ source: [Quanyu Tang](https://www.erdosproblems.com/forum/thread/1045)
 
+## Initial Attempts
+
+
+
+
 ## Todo
  - find maxima for further $n$ (prove they are at least local minima with e.g. KKT conditions)
  - prove above known cases are global minima with interval arithmetic 
