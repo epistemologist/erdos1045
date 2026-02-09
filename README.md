@@ -43,4 +43,4 @@ we attempt to maximize
  - prove above known cases are global minima with interval arithmetic 
 
 ## References / Further Reading
-TODO
+to update
