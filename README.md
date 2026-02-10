@@ -43,4 +43,21 @@ we attempt to maximize
  - prove above known cases are global minima with interval arithmetic 
 
 ## References / Further Reading
-to update
+Spamming references for future reading here
+- original Erdos problem
+    - [Erdos problems site thread](https://www.erdosproblems.com/forum/thread/1045?order=newest): contains main discussion about problem (some discussion about how $\Delta(n)$ behaves as $n \to \infty$)
+    - [*Metric properties of polynomials* by Erdos et al](https://users.renyi.hu/~p_erdos/1958-05.pdf): problem stems from this paper
+    - [*On metric properties of complex polynomials* by Pommerenke](https://projecteuclid.org/journals/michigan-mathematical-journal/volume-8/issue-2/On-metric-properties-of-complex-polynomials/10.1307/mmj/1028998561.full): shows that $\Delta(n) \le 2^{4(n-1)} n^n$
+- related problems
+    - [*Using symbolic calculations to determine largest small polygons* by Audet](https://link.springer.com/article/10.1007/s10898-020-00908-w): maximizing area of n-gon with unit diameter
+    - [*A Discrete Isoperimetric Problem* by Datta](https://link.springer.com/article/10.1023/A:1004997002327): perimeter of unit diameter n-gon $\le 2n\sin(\pi/2n)$ with equality if $n$ has odd factor
+    - [*The small octagon with longest perimeter* by Audet et al](https://www.sciencedirect.com/science/article/pii/S0097316506000537): octagon with unit diameter and longest perimeter; uses interval arithmetic / global optimization
+    - [*The small hexagon and heptagon with maximum sum of distances between vertices* by Audet et al](https://link.springer.com/article/10.1007/s10898-010-9572-2): similar to problem above but sum replaced with product, regular n-gon is not maximizer; uses quadratic programming to optimize
+ - interval arithmetic
+    - [*Rigorous Global Search: Continuous Problems* by Kearfott](https://link.springer.com/book/10.1007/978-1-4757-2495-0): entire book written on using interval arithmetic for nonlinear systems and global optimization
+    - [*Enclosure Methods for Multivariate Differentiable Functions and Application to Global Optimization* by Messine et al](https://lib.jucs.org/article/27501/): details interval branch and bound algorithm with Taylor series improvement, also has nice pseudocode
+    - [*Formal Verification of Nonlinear Inequalities
+with Taylor Interval Approximations* by Hales et al](https://arxiv.org/pdf/1301.1702): use of global optimization/interval arithmetic techniques in computer assisted proof of Kepler conjecture
+- general optimization 
+    - [free book on optimization algorithms](https://drive.google.com/file/d/1qYjI1igDuBg3x884JKZaCWuJkgdPylHN/view)
+    - [paper/tutorial on KKT conditions](https://arxiv.org/pdf/2110.01858)
