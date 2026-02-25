@@ -33,10 +33,17 @@ we attempt to maximize
     However, $\sum \text{sides}$ and $\sum \text{diagonals} $ of a pentagon are both maximized by the regular pentagon (see [here](https://link.springer.com/article/10.1007/s10898-010-9572-2) for example); since all sides and diagonals are equal, by AM-GM, we have $\ge$ is $=$ in the above inequality
 - $n=6$: $` \begin{align*} z_1 &= (-1,0) \\ z_2 &= (1,0) \\ z_3 &= (0, \sqrt3) \\ z_4 &= (0, -(2-\sqrt3)) \\ z_5 &= (\sqrt3-1, 1) \\ z_6 &= (-(\sqrt3-1), 1) \end{align*}`$ source: [Quanyu Tang](https://www.erdosproblems.com/forum/thread/1045)
 
-## Initial Attempts
+## Small Cases
+We use the tool [ibexopt](https://ibex-team.github.io/ibex-lib/optim.html#getting-started) to solve the above associated optimization problem for small $n$. Full results can be viewed [here](https://gist.github.com/epistemologist/df3bdcc8fc558976c8b138f9aac791b3).
 
+|n|x*|f*|number  of cells|time taken|
+|-|-|-|-|-|
+|2|(<-1.999999999739684, -1.999999999739683>)|[-4,-3.99999999895]|2| 0.000746s|
+|3|(<-1.999999999749726, -1.999999999749725> ; <1.73204427481969, 1.732044274819691> ; <-1.000002427141581, -1.00000242714158>)| [-64.0633391552,-63.999275816]|24|0.0120710000001s|
+|4| (<-1.035276180410083, -1.035276180410082> ; [-1.931851652578137, -1.931851652578136] ; [-0.517638090205042, -0.517638090205041] ; [-0.5176380902050423, -0.5176380902050411] ; [-1.931851652578137, -1.931851652578136]) |[-294.373942734,-294.079568791]|80510|56.8985120001s|
+|5|([1.236067977499788, 1.236067977499791] ; <1.175570504584946, 1.175570504584947> ; [-0.3819660112501055, -0.3819660112501044] ; <1.175570504584946, 1.175570504584947> ; [1.618033988749894, 1.618033988749895] ; [1.902113032590306, 1.902113032590308] ; [0.6180339887498939, 0.6180339887498958])|[-8534.10579826,-8525.57169246]|2731770|2766.68092401s
 
-
+Due to the exponential blowup as $n$ increases, a brute force approach for larger $n$ is infeasible (a run for $n=6$ has not terminated after 1 week of CPU time which is to be expected as it is an optimization in 2*6-3=9 variables)
 
 ## Todo
  - find maxima for further $n$ (prove they are at least local minima with e.g. KKT conditions)
